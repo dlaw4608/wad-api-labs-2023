@@ -15,8 +15,13 @@
         "react"
     ],
 
+    "settings": {
+        "react": {
+          "version": "detect" // Automatically detect React version
+        }
+      },
     "rules": {
-        "semi": 1,
-        "no-console": "off"
+           "semi": 1,
+           "no-console": "off"
     }
 }
