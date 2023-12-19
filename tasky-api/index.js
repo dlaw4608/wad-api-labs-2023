@@ -3,10 +3,14 @@ import express from 'express';
 import tasksRouter from './api/tasks';
 import './db';
 import usersRouter from './api/users';
+import cors from 'cors';
 
 dotenv.config();
 
 const app = express();
+
+// Enable CORS for all requests
+app.use(cors());
 
 const errHandler = (err, req, res, next) => {
   /* if the error in development then send stack trace to display whole error,
